@@ -77,7 +77,8 @@ A `total_consumption` column was engineered as the sum of `Value_NE5` and `Value
 ##  Methodology
 
 ### 1. Exploratory Data Analysis
-- Visualized electricity consumption across the full time range to understand overall trends
+- Visualized electricity consumption across the full time range to understand overall trends:
+- ![All Raw Data](images/all_raw_data.png)
 - Removed outliers (values below 40,000 units) to improve data quality
 - Analyzed temporal patterns using boxplots (hourly and monthly distributions), revealing daily and seasonal demand variations
 
@@ -104,7 +105,8 @@ The following features were created from the timestamp index:
 - Retrained the model on the full dataset
 - Generated future timestamps from Aug 2022 to Aug 2023
 - Applied the same feature engineering and lag mapping to future dates
-- Produced future electricity consumption forecasts for a year.
+- Produced future electricity consumption forecasts for a year:
+![Predicted Energy Consumption](images/predicted_energy_consumption.png)
 
 ---
 
