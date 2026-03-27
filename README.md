@@ -71,9 +71,9 @@ A `total_consumption` column was engineered as the sum of `Value_NE5` and `Value
 ##  Methodology
 
 ### 1. Exploratory Data Analysis
-- Visualized raw consumption over the full date range
-- Identified and removed outliers (readings below 40,000 units)
-- Analyzed consumption patterns by hour and month using boxplots
+- Visualized electricity consumption across the full time range to understand overall trends
+- Removed outliers (values below 40,000 units) to improve data quality
+- Analyzed temporal patterns using boxplots (hourly and monthly distributions), revealing daily and seasonal demand variations
 
 ### 2. Feature Engineering
 The following features were created from the timestamp index:
@@ -81,15 +81,24 @@ The following features were created from the timestamp index:
 - **Time features**: hour, day of week, month, quarter, year, day of year, day of month, week of year
 - **Lag features**: consumption from 1 year ago, 2 years ago, and 3 years ago — to capture yearly seasonality
 
-### 3. Model Training
+### 3. Initial Model Training & Testing
 - **Algorithm**: XGBoost Regressor (`gbtree` booster)
+- Initial split:
+    - Training set: data before 2020
+    - Test set: data from 2020 onward
 - **Hyperparameters**: `n_estimators=2000`, `max_depth=3`, `learning_rate=0.01`
-- **Validation**: 5-fold `TimeSeriesSplit` with a gap to prevent leakage
+- Trained the model on historical data and evaluated performance on the unseen test set to simulate real-world forecasting
 
-### 4. Forecasting
+### 4. Validation
+- Applied TimeSeriesSplit cross-validation on the training data
+- Ensured temporal order was preserved and prevented data leakage
+- Used to validate model stability and robustness across multiple time-based splits
+
+### 5. Final Model & Forecasting
 - Retrained the model on the full dataset
 - Generated future timestamps from Aug 2022 to Aug 2023
 - Applied the same feature engineering and lag mapping to future dates
+- Produced future electricity consumption forecasts for a year.
 
 ---
 
