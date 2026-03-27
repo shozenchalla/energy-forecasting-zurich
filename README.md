@@ -1,4 +1,4 @@
- ## ⚡ Zurich Electricity Consumption Forecasting
+ ##  Zurich Electricity Consumption Forecasting
 
 A machine learning project that forecasts electricity consumption in Zurich, Switzerland using XGBoost and time series cross-validation. The model predicts future energy demand based on historical consumption data and weather features.
 
@@ -30,7 +30,7 @@ This project uses 15-minute interval electricity consumption data from Zurich (2
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 zurich-energy-forecasting/
