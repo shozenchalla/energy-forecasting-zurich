@@ -41,7 +41,7 @@ This project uses 15-minute interval electricity consumption data from Zurich (2
 zurich-energy-forecasting/
 ├── README.md
 ├── requirements.txt
-├── zurichenergy copy.ipynb       ← Main notebook (EDA + modeling + forecasting)
+├── zurichenergy.ipynb       ← Main notebook (EDA + modeling + forecasting)
 └── data/
     └── zurich_electricity_consumption.csv
 ```
