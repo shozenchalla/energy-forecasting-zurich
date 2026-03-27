@@ -182,9 +182,9 @@ pip install -r requirements.txt
 ##  Author
 
 **Shozen**
+- Github: [GitHub Profile](https://github.com/shozenchalla)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/shozen-challa/)
 
-Github: [GitHub Profile](https://github.com/shozenchalla)
-LinkedIn: [LinkedIn Profile]([https://www.linkedin.com/in/shozen-challa/])
 
 ---
 
