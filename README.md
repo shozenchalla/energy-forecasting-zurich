@@ -131,7 +131,7 @@ Produced future electricity consumption forecasts for a year:
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. **Clone the repository**
 ```bash
@@ -151,7 +151,7 @@ jupyter notebook energy_forecasting.ipynb
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 ```
 pandas
@@ -170,7 +170,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💡 Potential Improvements
+##  Potential Improvements
 
 - Incorporate weather features (temperature, humidity, solar radiation) already present in the dataset
 - Add `is_weekend` and `is_holiday` binary features
@@ -179,9 +179,12 @@ pip install -r requirements.txt
 
 ---
 
-## 👤 Author
+##  Author
 
-**Shozen** — [GitHub Profile](https://github.com/shozenchalla)
+**Shozen**
+
+Github: [GitHub Profile](https://github.com/shozenchalla)
+LinkedIn: [LinkedIn Profile]([https://www.linkedin.com/in/shozen-challa/])
 
 ---
 
