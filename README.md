@@ -1,11 +1,6 @@
-# ⚡ Zurich Electricity Consumption Forecasting
+ ## ⚡ Zurich Electricity Consumption Forecasting
 
 A machine learning project that forecasts electricity consumption in Zurich, Switzerland using XGBoost and time series cross-validation. The model predicts future energy demand based on historical consumption data and weather features.
-
-![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python)
-![XGBoost](https://img.shields.io/badge/XGBoost-2.0+-orange?style=flat-square)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3+-red?style=flat-square)
-![Pandas](https://img.shields.io/badge/Pandas-2.0+-green?style=flat-square)
 
 ---
 
@@ -78,9 +73,18 @@ A `total_consumption` column was engineered as the sum of `Value_NE5` and `Value
 
 ### 1. Exploratory Data Analysis
 - Visualized electricity consumption across the full time range to understand overall trends:
-- ![All Raw Data](images/all_raw_data.png)
-- Removed outliers (values below 40,000 units) to improve data quality
+![All Raw Data](images/all_raw_data.png)
+
+- Removed outliers (values below 40,000 units) to improve data quality:
+![Outlier Histogram](images/energy_consumption_hist.png)
+
 - Analyzed temporal patterns using boxplots (hourly and monthly distributions), revealing daily and seasonal demand variations
+
+Hourly Distribution:
+![Hourly Distribution](images/consumption_by_hour_boxplot.png)
+
+Monthly Distribution:
+![Monthly Distribution](images/consumption_by_month_boxplot.png)
 
 ### 2. Feature Engineering
 The following features were created from the timestamp index:
@@ -93,19 +97,36 @@ The following features were created from the timestamp index:
 - Initial split:
     - Training set: data before 2020
     - Test set: data from 2020 onward
+
+All Data:
+![Training/Test Split](images/data_split.png)
+
+Week of Data:
+![Week of Data](images/week_of_data.png)
+
 - **Hyperparameters**: `n_estimators=2000`, `max_depth=3`, `learning_rate=0.01`
 - Trained the model on historical data and evaluated performance on the unseen test set to simulate real-world forecasting
+
+Predicted Data:
+![Predicted Data](images/predicted_data.png)
+
+Predicted Week of Data:
+![Predicted Week of Data](images/week_of_data_predicted.png)
 
 ### 4. Validation
 - Applied TimeSeriesSplit cross-validation on the training data
 - Ensured temporal order was preserved and prevented data leakage
 - Used to validate model stability and robustness across multiple time-based splits
 
+Time Series Cross Validation:
+![Time Series Cross Validation](images/train_test_split.png)
+
 ### 5. Final Model & Forecasting
 - Retrained the model on the full dataset
 - Generated future timestamps from Aug 2022 to Aug 2023
 - Applied the same feature engineering and lag mapping to future dates
-- Produced future electricity consumption forecasts for a year:
+
+Produced future electricity consumption forecasts for a year:
 ![Predicted Energy Consumption](images/predicted_energy_consumption.png)
 
 ---
