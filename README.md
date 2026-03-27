@@ -42,9 +42,6 @@ zurich-energy-forecasting/
 |    └── zurichenergy.ipynb      ← Main notebook (EDA + modeling + forecasting)
 ├── README.md
 └── requirements.txt
-
-
-
 ```
 
 ---
