@@ -9,7 +9,7 @@ A machine learning project that forecasts electricity consumption in Zurich, Swi
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project uses 15-minute interval electricity consumption data from Zurich (2015–2022) to:
 
@@ -20,7 +20,7 @@ This project uses 15-minute interval electricity consumption data from Zurich (2
 
 ---
 
-## 📊 Results
+##  Results
 
 | Metric | Value |
 |--------|-------|
@@ -41,14 +41,14 @@ This project uses 15-minute interval electricity consumption data from Zurich (2
 zurich-energy-forecasting/
 ├── README.md
 ├── requirements.txt
-├── energy_forecasting.ipynb       ← Main notebook (EDA + modeling + forecasting)
+├── zurichenergy copy.ipynb       ← Main notebook (EDA + modeling + forecasting)
 └── data/
     └── zurich_electricity_consumption.csv
 ```
 
 ---
 
-## 🔍 Dataset
+##  Dataset
 
 The dataset contains 15-minute interval readings from 2015 to 2022 with the following columns:
 
@@ -68,7 +68,7 @@ A `total_consumption` column was engineered as the sum of `Value_NE5` and `Value
 
 ---
 
-## 🛠️ Methodology
+##  Methodology
 
 ### 1. Exploratory Data Analysis
 - Visualized raw consumption over the full date range
@@ -143,7 +143,7 @@ pip install -r requirements.txt
 
 ## 👤 Author
 
-**Shozeb** — [GitHub Profile](https://github.com/your-username)
+**Shozen** — [GitHub Profile](https://github.com/shozenchalla)
 
 ---
 
