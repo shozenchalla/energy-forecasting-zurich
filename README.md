@@ -17,17 +17,25 @@ This project uses 15-minute interval electricity consumption data from Zurich (2
 ---
 
 ##  Results
+Test Set Performance (2020 onward):
+| Metric | Value |
+|--------|-------|
+| RMSE | 5443.78 |
+| MAE | 3930.36 |
+| SMAPE | 5.02% |
+> These errors correspond to roughly 4–6% of typical consumption levels, indicating strong predictive accuracy for a high‑variance energy load dataset.
 
+Time‑Series Cross‑Validation (5 folds): 
 | Metric | Value |
 |--------|-------|
 | Cross-Validation RMSE (avg) | **3,875.62** |
-| Fold 1 RMSE | 3,150.55 |
-| Fold 2 RMSE | 3,423.40 |
-| Fold 3 RMSE | 4,409.57 |
+| Fold 1 RMSE | 3186.11 |
+| Fold 2 RMSE | 3433.50 |
+| Fold 3 RMSE | 4429.88 |
 | Fold 4 RMSE | 5,022.75 |
-| Fold 5 RMSE | 3,371.82 |
-
-> Average error is approximately **4–6%** of typical consumption values (~60,000–100,000 units), indicating strong predictive performance.
+| Fold 5 RMSE | 3376.17 |
+| Average | 3889.68  |
+> Cross‑validation confirms that the model performs consistently across different temporal segments, with RMSE values ranging from ~3.1k to ~5.0k depending on seasonal load variability.
 
 ---
 
