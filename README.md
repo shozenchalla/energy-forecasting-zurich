@@ -10,6 +10,7 @@ This project uses 15-minute interval electricity consumption data from Zurich (2
 
 - Explore and visualize consumption patterns by hour, day, and month
 - Build an XGBoost regression model with time-based and lag features
+- Evaluate performance using RMSE, MAE, and SMAPE
 - Validate the model using proper time series cross-validation (no data leakage)
 - Forecast electricity consumption one year into the future (Aug 2022 – Aug 2023)
 
